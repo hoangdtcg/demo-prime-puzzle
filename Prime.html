@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkPrime() {
+        let N = +prompt("Nhap so N");
+        let i = 2;
+
+        while (i<N){
+            if(N%i == 0){
+                alert(N+" khong phai la so nguyen to");
+                return;
+            }else{
+                i++;
+            }
+
+        }
+        alert(N+" la so nguyen to");
+    }
+
+    function checkPrime2() {
+        let N = +prompt("Nhap so N");
+        let i = 2;
+        let flag = true;
+
+        while (i < N){
+            if(N%i == 0){
+                flag = false;
+            }
+            i++;
+        }
+
+        if(flag){
+            alert("N la so nguyen to");
+        }else {
+            alert("N khong phai so nguyen to");
+        }
+    }
+    checkPrime2();
+</script>
+</body>
+</html>
